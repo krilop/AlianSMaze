@@ -48,7 +48,15 @@ public class Player extends JPanel {
             System.out.println("Error with path to image of character!");
         }
     }
-
+    public Image getImg(){
+        return img;
+    }
+    public int getPosX(){
+        return posX;
+    }
+    public int getPosY(){
+        return posY;
+    }
 
     /* Сделать смену иконки игрока для разного нажатия кнопок.
     int x = 10; // начальная координата X
