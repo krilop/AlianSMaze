@@ -33,6 +33,25 @@ public class Cell extends JPanel {
         }
 
     }
+    public int getLengthToExit()
+    {
+        return lengthToExit;
+    }
+    public void setUpBorder(boolean upBorder){
+        this.upBorder=upBorder;
+    }
+
+    public void setDownBorder(boolean downBorder){
+        this.downBorder=downBorder;
+    }
+
+    public void setRightBorder(boolean rightBorder){
+        this.rightBorder=rightBorder;
+    }
+
+    public void setLeftBorder(boolean leftBorder){
+        this.leftBorder=leftBorder;
+    }
     public void setTypeOfCell(short type)
     {
         try{
