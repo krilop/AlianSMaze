@@ -11,15 +11,17 @@ public class MazePrint extends JPanel implements ActionListener {
     private Player pl=new Player();
     public MazePrint(){
         arrayOfCells=new Cell[SIZE/CELL_SIZE][SIZE/CELL_SIZE];
-
+        //add(pl);
     }
-
+    public Player getPl(){
+        return pl;
+    }
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if(inGame){
-            g.drawImage(pl.getImg(),pl.getPosX(),pl.getPosY(),this);
+            g.drawImage(pl.getImg(),pl.getPosX()*16,pl.getPosY()*16,this);
         }
     }
 

@@ -7,7 +7,9 @@ public class MainWindow extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(640,690);
         setLocation(650,200);
-        add(new MazePrint());
+        MazePrint maze=new MazePrint();
+        add(maze);
+        add(maze.getPl());
         setVisible(true);
 
     }
