@@ -130,7 +130,7 @@ public class Player extends JPanel implements ActionListener {
             super.keyPressed(e);
             System.out.println("Key pressed");
             try {
-                Thread.sleep(500);
+                Thread.sleep(100);
                 ImageIcon iiCharacter = new ImageIcon(strToPath);
                 Random random = new Random();
                 int rand = random.nextInt(2);
